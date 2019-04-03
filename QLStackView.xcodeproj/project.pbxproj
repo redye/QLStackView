@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6BFF4CB0B8DF97EDA685C50 /* libPods-QLStackViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFC6D8A4664B23BEA711CA1 /* libPods-QLStackViewUITests.a */; };
+		D1C92465224B153000C0F4EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C92464224B153000C0F4EA /* AppDelegate.m */; };
+		D1C92468224B153000C0F4EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C92467224B153000C0F4EA /* ViewController.m */; };
+		D1C9246B224B153000C0F4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C92469224B153000C0F4EA /* Main.storyboard */; };
+		D1C9246D224B153100C0F4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C9246C224B153100C0F4EA /* Assets.xcassets */; };
+		D1C92470224B153100C0F4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C9246E224B153100C0F4EA /* LaunchScreen.storyboard */; };
+		D1C92473224B153100C0F4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C92472224B153100C0F4EA /* main.m */; };
+		D1C9247D224B153200C0F4EA /* QLStackViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C9247C224B153200C0F4EA /* QLStackViewUITests.m */; };
+		D1C9248A224B19DE00C0F4EA /* QLStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C92489224B19DE00C0F4EA /* QLStackView.m */; };
+		D1C9248D224B1C6400C0F4EA /* QLPartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C9248C224B1C6400C0F4EA /* QLPartView.m */; };
+		D1C92493224B1D0500C0F4EA /* QLPartBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C92492224B1D0500C0F4EA /* QLPartBuilder.m */; };
+		D1C92496224B6AB800C0F4EA /* QLStackBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C92495224B6AB800C0F4EA /* QLStackBuilder.m */; };
+		DB7540FF9BB13038CBBE872E /* libPods-QLStackView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B30B277F6DEF9A53A4647AE4 /* libPods-QLStackView.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1C92479224B153200C0F4EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1C92458224B153000C0F4EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1C9245F224B153000C0F4EA;
+			remoteInfo = QLStackView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0266A0B87B192A0D90A65014 /* Pods-QLStackView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLStackView.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLStackView/Pods-QLStackView.release.xcconfig"; sourceTree = "<group>"; };
+		2AFC6D8A4664B23BEA711CA1 /* libPods-QLStackViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QLStackViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		500F869FD4308209C77AD26C /* Pods-QLStackViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLStackViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QLStackViewUITests/Pods-QLStackViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		556436F1E26A9CCEDEF7E97D /* Pods-QLStackView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLStackView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QLStackView/Pods-QLStackView.debug.xcconfig"; sourceTree = "<group>"; };
+		B30B277F6DEF9A53A4647AE4 /* libPods-QLStackView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QLStackView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C92460224B153000C0F4EA /* QLStackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QLStackView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C92463224B153000C0F4EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D1C92464224B153000C0F4EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D1C92466224B153000C0F4EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D1C92467224B153000C0F4EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D1C9246A224B153000C0F4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1C9246C224B153100C0F4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1C9246F224B153100C0F4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1C92471224B153100C0F4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1C92472224B153100C0F4EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1C92478224B153200C0F4EA /* QLStackViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLStackViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C9247C224B153200C0F4EA /* QLStackViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLStackViewUITests.m; sourceTree = "<group>"; };
+		D1C9247E224B153200C0F4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1C92488224B19DE00C0F4EA /* QLStackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLStackView.h; sourceTree = "<group>"; };
+		D1C92489224B19DE00C0F4EA /* QLStackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLStackView.m; sourceTree = "<group>"; };
+		D1C9248B224B1C6400C0F4EA /* QLPartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLPartView.h; sourceTree = "<group>"; };
+		D1C9248C224B1C6400C0F4EA /* QLPartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLPartView.m; sourceTree = "<group>"; };
+		D1C92491224B1D0500C0F4EA /* QLPartBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLPartBuilder.h; sourceTree = "<group>"; };
+		D1C92492224B1D0500C0F4EA /* QLPartBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLPartBuilder.m; sourceTree = "<group>"; };
+		D1C92494224B6AB800C0F4EA /* QLStackBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLStackBuilder.h; sourceTree = "<group>"; };
+		D1C92495224B6AB800C0F4EA /* QLStackBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLStackBuilder.m; sourceTree = "<group>"; };
+		E5030A417FFA49A1DBA2D278 /* Pods-QLStackViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLStackViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLStackViewUITests/Pods-QLStackViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1C9245D224B153000C0F4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7540FF9BB13038CBBE872E /* libPods-QLStackView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C92475224B153200C0F4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BFF4CB0B8DF97EDA685C50 /* libPods-QLStackViewUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70950B072436809F9D83082F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B30B277F6DEF9A53A4647AE4 /* libPods-QLStackView.a */,
+				2AFC6D8A4664B23BEA711CA1 /* libPods-QLStackViewUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1B808FA99EDFB6D6A24E457 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				556436F1E26A9CCEDEF7E97D /* Pods-QLStackView.debug.xcconfig */,
+				0266A0B87B192A0D90A65014 /* Pods-QLStackView.release.xcconfig */,
+				500F869FD4308209C77AD26C /* Pods-QLStackViewUITests.debug.xcconfig */,
+				E5030A417FFA49A1DBA2D278 /* Pods-QLStackViewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1C92457224B153000C0F4EA = {
+			isa = PBXGroup;
+			children = (
+				D1C92462224B153000C0F4EA /* QLStackView */,
+				D1C9247B224B153200C0F4EA /* QLStackViewUITests */,
+				D1C92461224B153000C0F4EA /* Products */,
+				A1B808FA99EDFB6D6A24E457 /* Pods */,
+				70950B072436809F9D83082F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1C92461224B153000C0F4EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1C92460224B153000C0F4EA /* QLStackView.app */,
+				D1C92478224B153200C0F4EA /* QLStackViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1C92462224B153000C0F4EA /* QLStackView */ = {
+			isa = PBXGroup;
+			children = (
+				D1C92487224B19A400C0F4EA /* Classes */,
+				D1C92463224B153000C0F4EA /* AppDelegate.h */,
+				D1C92464224B153000C0F4EA /* AppDelegate.m */,
+				D1C92466224B153000C0F4EA /* ViewController.h */,
+				D1C92467224B153000C0F4EA /* ViewController.m */,
+				D1C92469224B153000C0F4EA /* Main.storyboard */,
+				D1C9246C224B153100C0F4EA /* Assets.xcassets */,
+				D1C9246E224B153100C0F4EA /* LaunchScreen.storyboard */,
+				D1C92471224B153100C0F4EA /* Info.plist */,
+				D1C92472224B153100C0F4EA /* main.m */,
+			);
+			path = QLStackView;
+			sourceTree = "<group>";
+		};
+		D1C9247B224B153200C0F4EA /* QLStackViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1C9247C224B153200C0F4EA /* QLStackViewUITests.m */,
+				D1C9247E224B153200C0F4EA /* Info.plist */,
+			);
+			path = QLStackViewUITests;
+			sourceTree = "<group>";
+		};
+		D1C92487224B19A400C0F4EA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D1C92488224B19DE00C0F4EA /* QLStackView.h */,
+				D1C92489224B19DE00C0F4EA /* QLStackView.m */,
+				D1C92494224B6AB800C0F4EA /* QLStackBuilder.h */,
+				D1C92495224B6AB800C0F4EA /* QLStackBuilder.m */,
+				D1C9248B224B1C6400C0F4EA /* QLPartView.h */,
+				D1C9248C224B1C6400C0F4EA /* QLPartView.m */,
+				D1C92491224B1D0500C0F4EA /* QLPartBuilder.h */,
+				D1C92492224B1D0500C0F4EA /* QLPartBuilder.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1C9245F224B153000C0F4EA /* QLStackView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1C92481224B153200C0F4EA /* Build configuration list for PBXNativeTarget "QLStackView" */;
+			buildPhases = (
+				481F8942F01377017FAA1395 /* [CP] Check Pods Manifest.lock */,
+				D1C9245C224B153000C0F4EA /* Sources */,
+				D1C9245D224B153000C0F4EA /* Frameworks */,
+				D1C9245E224B153000C0F4EA /* Resources */,
+				79F0D02CC27FB944709DA55E /* [CP] Embed Pods Frameworks */,
+				02B4DC2C99D3F4840326EA6F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QLStackView;
+			productName = QLStackView;
+			productReference = D1C92460224B153000C0F4EA /* QLStackView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1C92477224B153200C0F4EA /* QLStackViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1C92484224B153200C0F4EA /* Build configuration list for PBXNativeTarget "QLStackViewUITests" */;
+			buildPhases = (
+				0111374F0A1EF4E885D2E3B2 /* [CP] Check Pods Manifest.lock */,
+				D1C92474224B153200C0F4EA /* Sources */,
+				D1C92475224B153200C0F4EA /* Frameworks */,
+				D1C92476224B153200C0F4EA /* Resources */,
+				4FFB0D1CD9166BEF4D16B9DA /* [CP] Embed Pods Frameworks */,
+				C11AFDE27824F969339B07F1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1C9247A224B153200C0F4EA /* PBXTargetDependency */,
+			);
+			name = QLStackViewUITests;
+			productName = QLStackViewUITests;
+			productReference = D1C92478224B153200C0F4EA /* QLStackViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1C92458224B153000C0F4EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = redye.hu;
+				TargetAttributes = {
+					D1C9245F224B153000C0F4EA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D1C92477224B153200C0F4EA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D1C9245F224B153000C0F4EA;
+					};
+				};
+			};
+			buildConfigurationList = D1C9245B224B153000C0F4EA /* Build configuration list for PBXProject "QLStackView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1C92457224B153000C0F4EA;
+			productRefGroup = D1C92461224B153000C0F4EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1C9245F224B153000C0F4EA /* QLStackView */,
+				D1C92477224B153200C0F4EA /* QLStackViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1C9245E224B153000C0F4EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C92470224B153100C0F4EA /* LaunchScreen.storyboard in Resources */,
+				D1C9246D224B153100C0F4EA /* Assets.xcassets in Resources */,
+				D1C9246B224B153000C0F4EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C92476224B153200C0F4EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0111374F0A1EF4E885D2E3B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		02B4DC2C99D3F4840326EA6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLStackView/Pods-QLStackView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		481F8942F01377017FAA1395 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4FFB0D1CD9166BEF4D16B9DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLStackViewUITests/Pods-QLStackViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79F0D02CC27FB944709DA55E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLStackView/Pods-QLStackView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C11AFDE27824F969339B07F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLStackViewUITests/Pods-QLStackViewUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1C9245C224B153000C0F4EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C92468224B153000C0F4EA /* ViewController.m in Sources */,
+				D1C9248D224B1C6400C0F4EA /* QLPartView.m in Sources */,
+				D1C92473224B153100C0F4EA /* main.m in Sources */,
+				D1C9248A224B19DE00C0F4EA /* QLStackView.m in Sources */,
+				D1C92496224B6AB800C0F4EA /* QLStackBuilder.m in Sources */,
+				D1C92465224B153000C0F4EA /* AppDelegate.m in Sources */,
+				D1C92493224B1D0500C0F4EA /* QLPartBuilder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C92474224B153200C0F4EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C9247D224B153200C0F4EA /* QLStackViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1C9247A224B153200C0F4EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1C9245F224B153000C0F4EA /* QLStackView */;
+			targetProxy = D1C92479224B153200C0F4EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1C92469224B153000C0F4EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1C9246A224B153000C0F4EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1C9246E224B153100C0F4EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1C9246F224B153100C0F4EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1C9247F224B153200C0F4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D1C92480224B153200C0F4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1C92482224B153200C0F4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556436F1E26A9CCEDEF7E97D /* Pods-QLStackView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58A2U6L78Y;
+				INFOPLIST_FILE = QLStackView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.redye.QLStackView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1C92483224B153200C0F4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0266A0B87B192A0D90A65014 /* Pods-QLStackView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58A2U6L78Y;
+				INFOPLIST_FILE = QLStackView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.redye.QLStackView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D1C92485224B153200C0F4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 500F869FD4308209C77AD26C /* Pods-QLStackViewUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58A2U6L78Y;
+				INFOPLIST_FILE = QLStackViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.redye.QLStackViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QLStackView;
+			};
+			name = Debug;
+		};
+		D1C92486224B153200C0F4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5030A417FFA49A1DBA2D278 /* Pods-QLStackViewUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58A2U6L78Y;
+				INFOPLIST_FILE = QLStackViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.redye.QLStackViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QLStackView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1C9245B224B153000C0F4EA /* Build configuration list for PBXProject "QLStackView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C9247F224B153200C0F4EA /* Debug */,
+				D1C92480224B153200C0F4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1C92481224B153200C0F4EA /* Build configuration list for PBXNativeTarget "QLStackView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C92482224B153200C0F4EA /* Debug */,
+				D1C92483224B153200C0F4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1C92484224B153200C0F4EA /* Build configuration list for PBXNativeTarget "QLStackViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C92485224B153200C0F4EA /* Debug */,
+				D1C92486224B153200C0F4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1C92458224B153000C0F4EA /* Project object */;
+}

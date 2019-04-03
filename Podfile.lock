@@ -1,0 +1,17 @@
+PODS:
+  - Masonry (1.1.0)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+
+DEPENDENCIES:
+  - Masonry
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+
+PODFILE CHECKSUM: f92cc0b8acc8eb5dc3b04b9073f1e47b0e2f85cc
+
+COCOAPODS: 1.2.1
