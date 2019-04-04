@@ -59,17 +59,20 @@
                 } else if (partView.builder.maxWidth > 0) {
                     make.width.mas_lessThanOrEqualTo(partView.builder.maxWidth);
                 }
+                BOOL isHeight = NO;
                 if (partView.builder.height > 0) {
                     make.height.mas_equalTo(partView.builder.height);
-                } else {
-                    make.bottom.equalTo(self.mas_bottom).offset(-padding);
+                    isHeight = YES;
                 }
+                BOOL needHeight = !isHeight && !partView.builder.intrinsic;
                 if (self.builder.alignment == QLStackAlignmentTop) {
                     make.top.equalTo(self.mas_top).offset(padding);
+                    needHeight ? make.bottom.equalTo(self.mas_bottom).offset(-padding) : nil;
                 } else if (self.builder.alignment == QLStackAlignmentCenter) {
                     make.centerY.equalTo(self.mas_centerY);
                 } else if (self.builder.alignment == QLStackAlignmentBottom) {
                     make.bottom.equalTo(self.mas_bottom).offset(-padding);
+                    needHeight ? make.top.equalTo(self.mas_top).offset(padding) : nil;
                 }
                 if (i == self.builder.arrangedSubviews.count - 1 && self.builder.extendWith >= 0) {
                     make.right.equalTo(self.mas_right).offset(-padding);
@@ -101,31 +104,36 @@
                 } else  {
                     make.top.equalTo(lastView.mas_bottom).offset(spacing);
                 }
+                BOOL isWidth = NO;
                 if (partView.builder.width > 0) {
                     make.width.mas_equalTo(partView.builder.width);
+                    isWidth = YES;
                 } else if (partView.builder.minWidth > 0) {
                     make.width.mas_greaterThanOrEqualTo(partView.builder.minWidth);
+                    isWidth = YES;
                 } else if (partView.builder.maxWidth > 0) {
                     make.width.mas_lessThanOrEqualTo(partView.builder.maxWidth);
-                } else {
-                    make.right.equalTo(self.mas_right).offset(-padding);
+                    isWidth = YES;
                 }
                 if (partView.builder.height > 0) {
                     make.height.mas_equalTo(partView.builder.height);
                 }
+                BOOL needWidth = !isWidth && !partView.builder.intrinsic;
                 if (self.builder.alignment == QLStackAlignmentLeft) {
                     make.left.equalTo(self.mas_left).offset(padding);
+                    needWidth ? make.right.equalTo(self.mas_right).offset(-padding) : nil;
                 } else if (self.builder.alignment == QLStackAlignmentCenter) {
                     make.centerX.equalTo(self.mas_centerX);
                 } else if (self.builder.alignment == QLStackAlignmentRight) {
                     make.right.equalTo(self.mas_right).offset(-padding);
+                    needWidth ? make.left.equalTo(self.mas_left).offset(padding) : nil;
                 }
                 if (i == self.builder.arrangedSubviews.count - 1 && self.builder.extendWith >= 0) {
                     make.bottom.equalTo(self.mas_bottom).offset(-padding);
                 }
                 if (i == self.builder.extendWith) {
                     make.left.equalTo(self.mas_left).offset(padding);
-                    make.right.equalTo(self.mas_right).offset(-padding);
+                    [make.right.equalTo(self.mas_right).offset(-padding) priorityLow];
                 }
             }];
             
@@ -325,7 +333,9 @@
         if (!key || !value) {
             continue;
         }
-        if ([key isEqualToString:@"padding"]) {
+        if ([key isEqualToString:@"intrinsic"]) {
+            builder.intrinsicEqualTo([value boolValue]);
+        } else if ([key isEqualToString:@"padding"]) {
             builder.paddingEqualTo([value floatValue]);
         } else if ([key isEqualToString:@"width"]) {
             builder.widthEqualTo([value floatValue]);

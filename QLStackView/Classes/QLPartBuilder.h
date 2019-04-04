@@ -24,8 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat minWidth;
 
 @property (nonatomic, assign) CGFloat maxWidth;
-
-@property (nonatomic, assign) BOOL ignoreExtend;
+/// 是否忽略c
+@property (nonatomic, assign) BOOL intrinsic;
 
 #pragma mark - 样式
 @property (nonatomic, strong) UIColor *backgroundColor;
@@ -50,6 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIView *view;
 
+- (QLPartBuilder *(^)(BOOL))intrinsicEqualTo;
 - (QLPartBuilder *(^)(CGFloat))paddingEqualTo;
 - (QLPartBuilder *(^)(CGFloat))widthEqualTo;
 - (QLPartBuilder *(^)(CGFloat))heightEqualTo;

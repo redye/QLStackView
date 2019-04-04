@@ -10,6 +10,13 @@
 
 @implementation QLPartBuilder
 
+- (QLPartBuilder * _Nonnull (^)(BOOL))intrinsicEqualTo {
+    return ^QLPartBuilder *(BOOL intrinsic) {
+        self.intrinsic = intrinsic;
+        return self;
+    };
+}
+
 - (QLPartBuilder * _Nonnull (^)(CGFloat))paddingEqualTo {
     return ^QLPartBuilder *(CGFloat padding) {
         self.padding = padding;
